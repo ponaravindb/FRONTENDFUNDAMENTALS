@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9ebee;
+    font-family: Helvetica, sans-serif;
+}
+
+main,
+header,
+footer {
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    background-color: #4267b2;
+    height: 42px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12;
+    font-family: Helvetica, sans-serif;
+}
+
+header > i {
+    font-size: 28px;
+    margin-left: 30px;
+    margin-right: 5px;
+}
+
+#title {
+    box-sizing: border-box;
+    height: 26px;
+    width: 100%;
+    max-width: 450px;
+    padding: 2px 5px;
+    margin: 0;
+    background: white;
+    border-radius: 2px;
+    font-size: 14px;
+    color: black;
+    font-weight: 100;
+    line-height: 24px;
+    border: none;
+    display: block;
+}
+#postsTag {
+    color: #606770;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16.08px;
+}
+
+.post-container {
+    background-color: white;
+    border: solid 1px rgb(221, 223, 226);
+    border-radius: 3px;
+    width: 500px;
+    padding: 12px;
+    padding-bottom: 0;
+    margin: 10px;
+    font-family: Helvetica, sans-serif;
+}
+
+.post-meta {
+    display: flex;
+}
+.meta-profile {
+    background-size: 110% 110%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+}
+.meta-profile.user {
+    background-image: url("resources/teacher.png");
+    filter: brightness(85%);
+}
+.meta-profile.wikipedia {
+    background-image: url("resources/wikipedia.png");
+}
+.meta-profile.stackoverflow {
+    background-image: url("resources/stackoverflow.png");
+    filter: brightness(85%);
+}
+
+.meta-profile > div {
+    box-sizing: content-box;
+    background-color: #999;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 9px;
+    left: 76%;
+    position: absolute;
+    top: 68%;
+    width: 9px;
+    z-index: 1;
+    filter: brightness(120%);
+}
+
+.meta-profile > .active {
+    background-color: #42b72a;
+}
+
+.meta-title {
+    display: flex;
+    flex-direction: column;
+}
+.meta-title > *:hover {
+    text-decoration-line: underline;
+}
+
+.post-title {
+    font-family: "Helvetica";
+    color: #385898;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.32px;
+    margin-bottom: 2px;
+}
+.post-time {
+    color: #616770;
+    font-size: 12px;
+}
+
+.post-body {
+    margin-top: 6px;
+}
+
+.post-body > h1 {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.post-body > p {
+    font-size: 14px;
+    line-height: 19.32px;
+}
+
+.post-body > p > a,
+.post-body > p > .emphasize {
+    text-decoration: solid;
+    text-decoration-line: none;
+    color: #385989;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.post-comments {
+    border-top: solid 1px rgb(218, 221, 225);
+    margin: initial -10px;
+    padding: 8px 12px 4px;
+    display: flex;
+}
+
+.comment-profile {
+    margin-right: 6px;
+    height: 32px;
+    width: 32px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-size: 110% 110%;
+}
+.comment-profile.user {
+    background-image: url("resources/teacher.png");
+    filter: brightness(85%);
+}
+
+.comment-body {
+    padding: 0px 10px;
+    font-size: 13px;
+    line-height: 16px;
+}
+.comment-profile-name {
+    color: #385989;
+    font-weight: 600;
+}
+.comment-profile-name:hover {
+    text-decoration-line: underline;
+}
+.comment-controls {
+    margin-top: 8px;
+    padding-bottom: 8px;
+    color: #385989;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.poll {
+    display: flex;
+    flex-direction: column;
+}
+.poll > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(204, 208, 213);
+    padding: 7.5px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+.poll > label:hover {
+    background-color: #ebedf0;
+}
+
+.poll > input:checked + label {
+    border-color: #4267b2;
+    color: #4267b2;
+    border-width: 2px;
+    padding: 6.5px 11px;
+}
